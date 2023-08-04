@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
 }
 .header{
     background: var(--black, #010101);
@@ -42,10 +45,14 @@
     color: white;
     font-family: Sen;
 }
+.nam{
+    height: 32px;
+    width: 30px;
+}
 .main1 h1{
     font-style: normal;
     font-weight: 900;
-    line-height: 100.812%;
+    line-height: 40px;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
@@ -126,9 +133,9 @@ text-transform: capitalize;
     border-radius: 1px;
     background: linear-gradient(138deg, #F33 0%, #C20202 100%);
     padding: 10px;
-    
+    text-decoration: none;
 }
-.main3{
+.main{
     margin: 100px 50px;
 }
 .main2 h3{
@@ -174,6 +181,7 @@ line-height: 42.5px; /* 265.625% */
 text-transform: capitalize;
 background: linear-gradient(138deg, #F33 0%, #C20202 100%);
 padding: 10px;
+text-decoration: none;
 }
 .img4{
     width: 80%;
@@ -208,6 +216,7 @@ line-height: 42.5px; /* 265.625% */
 text-transform: capitalize;
 background: linear-gradient(138deg, #F33 0%, #C20202 100%);
 padding: 10px;
+text-decoration: none;
 }
 .img5{
     width: 80%;
@@ -242,6 +251,7 @@ line-height: 42.5px; /* 265.625% */
 text-transform: capitalize;
 background: linear-gradient(138deg, #F33 0%, #C20202 100%);
 padding: 10px;
+text-decoration: none;
 }
 .img6{
     width: 58%;
@@ -317,16 +327,21 @@ text-decoration: none;
     font-size: 20px !important;
 }
 .cards h1{
-    background: linear-gradient(180deg, #868686 0%, rgba(217, 217, 217, 0.00) 100%);
+    border: 2px solid var(--orange, #F33);
+    border-radius: 4px;
+    background: linear-gradient(to bottom right, #F00 0%, rgba(255, 0, 0, 0.22) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #F00 0%, rgba(255, 0, 0, 0.22) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #F00 0%, rgba(255, 0, 0, 0.22) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #F00 0%, rgba(255, 0, 0, 0.22) 50%) top right / 50% 50% no-repeat;
     color: #FFF;
 text-align: center;
-/* font-family: Sen; */
-font-size: 64px;
+font-family: Sen;
+font-size: 60px;
 font-style: normal;
 font-weight: 700;
-line-height: 120.313%; /* 96.84px */
+line-height: 120.313%; 
 text-transform: uppercase;
 padding: 70px;
+}
+.card:hover{
+    cursor: pointer;
 }
 .para1{
     font-weight: 900;
@@ -383,6 +398,7 @@ background: var(--orange, #F33);
 .list1 i{
     font-size: 30px;
     margin: 10px;
+    color: white;
 }
 .content3{
     display: flex;
@@ -406,13 +422,17 @@ background: var(--orange, #F33);
     color: #F33 !important;
     text-decoration: underline !important;
 }
-
+.check{
+    float: right;
+    margin-right: -17px;
+    margin-bottom: -17px;
+}
 
 @media (max-width:768px) {
     .main1{
         text-align: center;
         margin-top: 0px;
-        padding: 50px;
+        padding: 50px 20px !important;
     }
     .main2{
         text-align: center;
@@ -465,6 +485,9 @@ background: var(--orange, #F33);
     }
     .card h1{
         font-size: 20px;
+    }
+    .img3{
+        margin-left: 0px;
     }
 }
 @media (max-width:623px) {
