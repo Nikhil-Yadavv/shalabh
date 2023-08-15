@@ -543,6 +543,12 @@ background: var(--orange, #F33);
     .link12{
         margin: 20px 50px;
     }
+    .link2{
+        padding: 10px;
+    }
+    .link1{
+        padding: 10px 20px;
+    }
 }
 @media (max-width:350px) {
     .link12{
