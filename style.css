@@ -9,6 +9,10 @@
 .header{
     background: var(--black, #010101);
 }
+.navbar{
+    box-shadow: 0px 0px 11px 0px #FFF;
+    /* position: fixed; */
+}
 .navbar-toggler-icon{
     color: white !important;
     background-color: transparent;
@@ -17,7 +21,8 @@
     height: 10vh;
 }
 .navbar-nav{
-    gap: 20px;
+    gap: 40px;
+    padding-right: 20px;
 }
 .nav-item a{
     color: var(--white, #FAFAFA) !important;
@@ -29,6 +34,8 @@
 }
 .active{
     background: var(--orange, #F33);
+    /* border-radius: 4px; */
+    padding: 10px 20px !important;
 }
 .img2{
     width: 100%;
@@ -50,21 +57,33 @@
     width: 30px;
 }
 .main1 h1{
+    font-size: 48px;
     font-style: normal;
     font-weight: 900;
-    line-height: 40px;
+    line-height: 48px;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
 .link1{
     color: white;
     background: var(--orange, #F33);
-    padding: 8px;
+    padding: 10px 40px;
     text-decoration: none;
+    font-size: 20px;
 }
 .link2{
     margin: 20px;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 1px solid #F33;
+}
+.link1:hover{
+    background-color: white;
+    color: #f33;
+}
+.link2:hover{
     color: white;
 }
 .link2 img{
@@ -78,13 +97,16 @@
     padding: 2px;
 }
 .main1 h6{
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    padding-right: 30px;
+    line-height: 20px;
+    margin-top: 20px;
 }
 .come{
     margin-top: 40px;
 }
 .main2{
-    margin: 100px 50px;
+    margin: 120px 50px;
 }
 .main2 h3{
     color: #000;
@@ -100,6 +122,9 @@ font-family: Sen;
 font-style: normal;
 font-weight: 700;
 line-height: 151.313%; /* 24.21px */
+}
+.main p{
+    font-weight: 700;
 }
 .main2 a{
     color: #0047FF;
@@ -294,9 +319,9 @@ text-decoration: none;
     line-height: 151.313%;
 }
 .link12{
-    margin: 20px 170px;
+    margin: 40px 170px;
     display: flex;
-    padding: 24px 32px;
+    padding: 15px 32px;
     justify-content: center !important;
     align-items: center !important;
     gap: 10px;
@@ -427,7 +452,14 @@ background: var(--orange, #F33);
     margin-right: -17px;
     margin-bottom: -17px;
 }
+@media (max-width:992px) and (min-width:769px){
+    .main1 h1{
+        font-size: 36px;
+        margin-top: -20px;
+        line-height: 38px;
+    }
 
+} 
 @media (max-width:768px) {
     .main1{
         text-align: center;
@@ -488,6 +520,12 @@ background: var(--orange, #F33);
     }
     .img3{
         margin-left: 0px;
+    }
+    .main{
+        text-align: center;
+    }
+    .card{
+        margin-bottom: 10px;
     }
 }
 @media (max-width:623px) {
